@@ -44,7 +44,5 @@ Enter what you have to do for the day and press the save button if you don't wan
 
 # Resources
 
-https://www.w3schools.com/jquery/default.asp
-https://www.freecodecamp.org/news/javascript-date-time-dayjs/
-https://day.js.org/
-https://www.w3schools.com/js/js_if_else.asp
+Added Week 6 Activity 23 html and css as a base
+https://home.openweathermap.org/

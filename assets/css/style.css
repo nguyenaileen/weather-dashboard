@@ -96,6 +96,9 @@ p {
   padding: 3% 4%;
   background-color: var(--dark);
   color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero p {
@@ -110,6 +113,7 @@ p {
   display: inline-block;
   border-radius: var(--border-radius);
   box-shadow: 6px 5px var(--light-dark);
+  align-items: center;
 }
 
 .list-group {
@@ -157,6 +161,7 @@ p {
   background-color: var(--dark);
   padding: 2.5%;
   border-radius: calc(.18rem - 1px) calc(.18rem - 1px) 0 0;
+  font-size: 30px;
 }
 
 .card-body {
