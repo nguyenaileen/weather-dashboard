@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
     <!--Import Google Icon Font-->
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -17,52 +15,232 @@
     />
     <link rel="stylesheet" href="style.css" />
 
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Git it Done</title>
+    <title>Weather Dashboard</title>
   </head>
+  <body>
+    <!--Navigation-->
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo"
+          ><i class="material-icons"></i>Reel and Meal<i class="material-icons"
+            >restaurant</i
+          ></a
+        >
+      </div>
+    </nav>
 
-  <body class="flex-column min-100-vh">
-    <header class="hero">
-      <h1 class="app-title">
-        <i class="material-icons"></i> Weather Dashboard
-      </h1>
-    </header>
+    <section class="search-container">
+      <!--Title and Description-->
+      <header>Reel and Meal</header>
+      <h3>
+        <i class="material-icons">restaurant</i> Find the perfect meal for your
+        reel
+      </h3>
+      <div class="row">
+        <!--Form-->
+        <form id="search_movie" class="col s12">
+          <div class="row">
+            <div class="input-field col s12 offset-m3 m6">
+              <i class="material-icons prefix">movie_filter</i>
+              <input
+                id="icon_prefix"
+                type="text"
+                class="validate materialize-input"
+              />
+              <label for="icon_prefix">Movie Title</label>
+            </div>
+          </div>
 
-    <main class="flex-row justify-space-between">
-      <div class="col-12 col-md-4">
-        <div class="card">
-          <h3 class="card-header text-uppercase">Search For a City:</h3>
-          <form id="user-form" class="card-body">
-            <label class="form-label" for="username">City Name</label>
-            <input
-              name="username"
-              id="username"
-              type="text"
-              autofocus="true"
-              class="form-input"
-            />
-            <button type="submit" class="btn">Search</button>
-          </form>
-        </div>
+          <button class="submitBtn">Get your Meals</button>
+        </form>
+      </div>
+    </section>
 
-        <div class="card">
-          <h3 class="card-header text-uppercase">Past Searches:</h3>
-          <div id="language-buttons" class="card-body">
-            <button data-language="javascript" class="btn">JavaScript</button>
-            <button data-language="html" class="btn">HTML</button>
-            <button data-language="css" class="btn">CSS</button>
+    <section class="search-results hidden">
+      <h3 class="error-message">Movie not Found</h3>
+      <div class="actual-results">
+        <h3 class="Name-Tag">[user movie]</h3>
+        <div class="row recipes">
+          <!--recipe card 1-->
+          <div id="recipe-1" class="recipe col s12 m3">
+            <div class="card">
+              <div class="card-image">
+                <img class="recipe-image" src="" />
+              </div>
+              <div class="card-content">
+                <p class="card-title">[Recipe Name]</p>
+                <p class="recipe-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+              <div class="card-action">
+                <a class="recipe-link" href="#">See Recipe</a>
+              </div>
+            </div>
+          </div>
+
+          <!--recipe card 2-->
+          <div id="recipe-2" class="recipe col s12 m3">
+            <div class="card">
+              <div class="card-image">
+                <img class="recipe-image" src="" />
+              </div>
+              <div class="card-content">
+                <p class="card-title">[Recipe Name]</p>
+                <p class="recipe-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+              <div class="card-action">
+                <a class="recipe-link" href="#">See Recipe</a>
+              </div>
+            </div>
+          </div>
+
+          <!--recipe card 3-->
+          <div id="recipe-3" class="recipe col s12 m3">
+            <div class="card">
+              <div class="card-image">
+                <img class="recipe-image" src="" />
+              </div>
+              <div class="card-content">
+                <p class="card-title">[Recipe Name]</p>
+                <p class="recipe-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+              <div class="card-action">
+                <a class="recipe-link" href="#">See Recipe</a>
+              </div>
+            </div>
+          </div>
+
+          <!--recipe card 4-->
+          <div id="recipe-4" class="recipe col s12 m3">
+            <div class="card">
+              <div class="card-image">
+                <img class="recipe-image" src="" />
+              </div>
+              <div class="card-content">
+                <p class="card-title">[Recipe Name]</p>
+                <p class="recipe-description">
+                  dunt ut labore et dolore magna aliqua. Ut enim ad minim
+                  veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat..
+                </p>
+              </div>
+              <div class="card-action">
+                <a class="recipe-link" href="#">See Recipe</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="col-12 col-md-8">
-        <h2 class="subtitle">
-          Today's Weather In <span id="repo-search-term"></span>
-        </h2>
-        <div id="repos-container" class="list-group"></div>
+    <section class="previous-search">
+      <h3 class="Previous-Name-Tag" id="previous-name-tag">
+        Previous Searches
+      </h3>
+      <div id="previousSearchHistory" class="row recipes">
+        <!--recipe card 1-->
+        <div id="recipe-1" class="recipe col s12 m3">
+          <div class="card">
+            <div class="card-image">
+              <img class="recipe-image" src="" />
+            </div>
+            <div class="card-content">
+              <p class="card-title">[Recipe Name]</p>
+              <p class="recipe-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+            <div class="card-action">
+              <a class="recipe-link" href="#">See Recipe</a>
+            </div>
+          </div>
+        </div>
+
+        <!--recipe card 2-->
+        <div id="recipe-2" class="recipe col s12 m3">
+          <div class="card">
+            <div class="card-image">
+              <img class="recipe-image" src="" />
+            </div>
+            <div class="card-content">
+              <p class="card-title">[Recipe Name]</p>
+              <p class="recipe-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+            <div class="card-action">
+              <a class="recipe-link" href="#">See Recipe</a>
+            </div>
+          </div>
+        </div>
+
+        <!--recipe card 3-->
+        <div id="recipe-3" class="recipe col s12 m3">
+          <div class="card">
+            <div class="card-image">
+              <img class="recipe-image" src="" />
+            </div>
+            <div class="card-content">
+              <p class="card-title">[Recipe Name]</p>
+              <p class="recipe-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+            <div class="card-action">
+              <a class="recipe-link" href="#">See Recipe</a>
+            </div>
+          </div>
+        </div>
+
+        <!--recipe card 4-->
+        <div id="recipe-4" class="recipe col s12 m3">
+          <div class="card">
+            <div class="card-image">
+              <img class="recipe-image" src="" />
+            </div>
+            <div class="card-content">
+              <p class="card-title">[Recipe Name]</p>
+              <p class="recipe-description">
+                dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat..
+              </p>
+            </div>
+            <div class="card-action">
+              <a class="recipe-link" href="#">See Recipe</a>
+            </div>
+          </div>
+        </div>
       </div>
-    </main>
+    </section>
 
-    <script src="./assets/js/homepage.js"></script>
+    <!--  Scripts-->
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

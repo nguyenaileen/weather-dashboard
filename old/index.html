@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Compiled and minified Materialize CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Git it Done</title>
+  </head>
+
+  <body class="flex-column min-100-vh">
+    <header class="hero">
+      <h1 class="app-title">
+        <i class="material-icons"></i> Weather Dashboard
+      </h1>
+    </header>
+
+    <main class="flex-row justify-space-between">
+      <div class="col-12 col-md-4">
+        <div class="card">
+          <h3 class="card-header text-uppercase">Search For a City:</h3>
+          <form id="user-form" class="card-body">
+            <label class="form-label" for="username">City Name</label>
+            <input
+              name="username"
+              id="username"
+              type="text"
+              autofocus="true"
+              class="form-input"
+            />
+            <button type="submit" class="btn">Search</button>
+          </form>
+        </div>
+
+        <div class="card">
+          <h3 class="card-header text-uppercase">Past Searches:</h3>
+          <div id="language-buttons" class="card-body">
+            <button data-language="javascript" class="btn">JavaScript</button>
+            <button data-language="html" class="btn">HTML</button>
+            <button data-language="css" class="btn">CSS</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-8">
+        <div class = Today's Weather>
+        <h2 class="subtitle">
+          Today's Weather In <span id="repo-search-term"></span>
+        </h2>
+        <div id="recipe-3" class="recipe col s12 m10">
+          <div class="card">
+            <div class="card-content">
+              <p class="card-title">DATE</p>
+              <i class="material-icons">sunny</i>
+              <p id="temperature-description">[Temp]</p>
+              <p id="wind-description">[Wind]</p>
+              <p id="humidity-description">[Humidity]</p>
+            </div>
+          </div>
+        </div>
+
+        <section class="search-results hidden">
+          <div class="actual-results">
+            <h3 class="Name-Tag">5-day Forecast</h3>
+            <div class="row recipes">
+              <!--day 1-->
+              <div id="recipe-1" class="recipe col s12 m2">
+                <div class="card">
+                  <div class="card-content">
+                    <p class="card-title">DATE</p>
+                    <i class="material-icons">sunny</i>
+                    <p id="temperature-description">[Temp]</p>
+                    <p id="wind-description">[Wind]</p>
+                    <p id="humidity-description">[Humidity]</p>
+                  </div>
+                </div>
+              </div>
+
+              <!--day 2-->
+              <div id="recipe-2" class="recipe col s12 m2">
+                <div class="card">
+                  <div class="card-content">
+                    <p class="card-title">DATE</p>
+                    <i class="material-icons">sunny</i>
+                    <p id="temperature-description">[Temp]</p>
+                    <p id="wind-description">[Wind]</p>
+                    <p id="humidity-description">[Humidity]</p>
+                  </div>
+                </div>
+              </div>
+
+              <!--day 3-->
+              <div id="recipe-3" class="recipe col s12 m2">
+                <div class="card">
+                  <div class="card-content">
+                    <p class="card-title">DATE</p>
+                    <i class="material-icons">sunny</i>
+                    <p id="temperature-description">[Temp]</p>
+                    <p id="wind-description">[Wind]</p>
+                    <p id="humidity-description">[Humidity]</p>
+                  </div>
+                </div>
+              </div>
+
+              <!--day 4-->
+              <div id="recipe-4" class="recipe col s12 m2">
+                <div class="card">
+                  <div class="card-content">
+                    <p class="card-title">DATE</p>
+                    <i class="material-icons">sunny</i>
+                    <p id="temperature-description">[Temp]</p>
+                    <p id="wind-description">[Wind]</p>
+                    <p id="humidity-description">[Humidity]</p>
+                  </div>
+                </div>
+              </div>
+
+              <!--day 5-->
+              <div id="recipe-5" class="recipe col s12 m2">
+                <div class="card">
+                  <div class="card-image">
+                    <img class="recipe-image" src="" />
+                  </div>
+                  <div class="card-content">
+                    <p class="card-title">DATE</p>
+                    <i class="material-icons">sunny</i>
+                    <p id="temperature-description">[Temp]</p>
+                    <p id="wind-description">[Wind]</p>
+                    <p id="humidity-description">[Humidity]</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="./assets/js/homepage.js"></script>
+  </body>
+</html>
