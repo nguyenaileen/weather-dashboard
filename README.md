@@ -23,13 +23,13 @@ Screenshot of deployed project
 
 Link to deployed application:
 
-https://nguyenaileen.github.io/agenda/
+https://nguyenaileen.github.io/weather-deashboard
 
 # Features:
+Current weather: Input your city to find the weather currently
+Forecast: see weather for next five days 
 
-Save: Save your inputs so you can reach them again even if you refresh
-Current date: Shows the current date
-Color Code: Gray shows what has already passed for the day, red shows the current hour and what you need to do, and green shows what you need to do later today!
+
 
 # Installation
 
@@ -40,9 +40,9 @@ To install this project you can either perform a git clone in your command-line 
 To use this project, git clone the repository and open the html file in your broswer
 Or you can visit the deployed application here: https://nguyenaileen.github.io/agenda/
 
-Enter what you have to do for the day and press the save button if you don't want it to clear on the refresh!
+
 
 # Resources
 
 Added Week 6 Activity 23 html and css as a base
-https://home.openweathermap.org/
+Used project 1 code for api routes 
