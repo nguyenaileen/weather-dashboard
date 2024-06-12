@@ -4,12 +4,12 @@ An app that allows the user to look up the weather in a specific city.
 
 # Table of Contents
 
-Description
-Demo
-Features
-Installation
-Usage
-Resources
+_[Description](#description)
+_[Demo](#demo)
+_[Features](#features)
+_[Installation](#installation)
+_[Usage](#usage)
+_[Resources](#resources)
 
 # Description
 
@@ -23,13 +23,17 @@ Screenshot of deployed project
 
 Link to deployed application:
 
+<<<<<<< HEAD
 https://nguyenaileen.github.io/weather-deashboard
+=======
+https://nguyenaileen.github.io/weather-dashboard/
+
+> > > > > > > de4bb08 (updated readme)
 
 # Features:
+
 Current weather: Input your city to find the weather currently
-Forecast: see weather for next five days 
-
-
+Forecast: see weather for next five days
 
 # Installation
 
@@ -38,11 +42,11 @@ To install this project you can either perform a git clone in your command-line 
 # Usage
 
 To use this project, git clone the repository and open the html file in your broswer
-Or you can visit the deployed application here: https://nguyenaileen.github.io/agenda/
 
-
+Or you can visit the deployed application here:
+https://nguyenaileen.github.io/weather-dashboard/
 
 # Resources
 
 Added Week 6 Activity 23 html and css as a base
-Used project 1 code for api routes 
+Used project 1 code for api routes
