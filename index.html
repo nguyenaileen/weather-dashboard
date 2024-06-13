@@ -17,6 +17,13 @@
     />
 
     <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
     <title>Weather Dashboard</title>
   </head>
 
@@ -62,7 +69,7 @@
         <div id="recipe-3" class="recipe col s12 m10">
           <div class="card">
             <div class="card-content">
-              <p class="card-title">DATE</p>
+              <p class="card-title" id="currentDay">DATE</p>
               <i class="material-icons">sunny</i>
               <p id="temperature-description">[Temp]</p>
               <p id="wind-description">[Wind]</p>
@@ -79,7 +86,7 @@
               <div id="recipe-1" class="recipe col s12 m2">
                 <div class="card">
                   <div class="card-content">
-                    <p class="card-title">DATE</p>
+                    <p class="card-title" id="day1">DATE</p>
                     <i class="material-icons">sunny</i>
                     <p id="temperature-description">[Temp]</p>
                     <p id="wind-description">[Wind]</p>
@@ -92,7 +99,7 @@
               <div id="recipe-2" class="recipe col s12 m2">
                 <div class="card">
                   <div class="card-content">
-                    <p class="card-title">DATE</p>
+                    <p class="card-title" id="day2">DATE</p>
                     <i class="material-icons">sunny</i>
                     <p id="temperature-description">[Temp]</p>
                     <p id="wind-description">[Wind]</p>
@@ -105,7 +112,7 @@
               <div id="recipe-3" class="recipe col s12 m2">
                 <div class="card">
                   <div class="card-content">
-                    <p class="card-title">DATE</p>
+                    <p class="card-title" id="day3">DATE</p>
                     <i class="material-icons">sunny</i>
                     <p id="temperature-description">[Temp]</p>
                     <p id="wind-description">[Wind]</p>
@@ -118,7 +125,7 @@
               <div id="recipe-4" class="recipe col s12 m2">
                 <div class="card">
                   <div class="card-content">
-                    <p class="card-title">DATE</p>
+                    <p class="card-title" id="day4">DATE</p>
                     <i class="material-icons">sunny</i>
                     <p id="temperature-description">[Temp]</p>
                     <p id="wind-description">[Wind]</p>
@@ -130,11 +137,9 @@
               <!--day 5-->
               <div id="recipe-5" class="recipe col s12 m2">
                 <div class="card">
-                  <div class="card-image">
-                    <img class="recipe-image" src="" />
-                  </div>
+                  <div class="card-image"></div>
                   <div class="card-content">
-                    <p class="card-title">DATE</p>
+                    <p class="card-title" id="day5">DATE</p>
                     <i class="material-icons">sunny</i>
                     <p id="temperature-description">[Temp]</p>
                     <p id="wind-description">[Wind]</p>
