@@ -1,10 +1,12 @@
 //date variables
-var currentDate = document.querySelector("#currentDay");
-var showDate = dayjs().format("MMMM D");
+$(document).ready(function () {
+  var currentDate = document.querySelector("#currentDay");
+  var showDate = dayjs().format("MMMM D");
 
-currentDate.textContent = showDate;
+  currentDate.textContent = showDate;
 
-const day1 = currentDate.add(7, "day");
+  const day1 = currentDate.add(7, "day");
+});
 
 var userFormEl = document.querySelector("#user-form");
 var languageButtonsEl = document.querySelector("#language-buttons");
