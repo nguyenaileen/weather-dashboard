@@ -23,12 +23,7 @@ Screenshot of deployed project
 
 Link to deployed application:
 
-<<<<<<< HEAD
-https://nguyenaileen.github.io/weather-deashboard
-=======
 https://nguyenaileen.github.io/weather-dashboard/
-
-> > > > > > > de4bb08 (updated readme)
 
 # Features:
 
